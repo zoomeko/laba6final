@@ -5,7 +5,6 @@ import java.util.HashMap;
 
 import java.util.Scanner;
 
-public class Question_2_Lake_Running {
 
 
 
@@ -75,7 +74,7 @@ public class Question_2_Lake_Running {
 
 // create a map of lake name and lake object
 
-        HashMap<String,Lake> lakes = new HashMap();
+        HashMap<String, lake> lakes = new HashMap<>();
 
         Scanner keyboard = new Scanner(System.in);
 
@@ -142,7 +141,8 @@ public class Question_2_Lake_Running {
 
                 val = Double.parseDouble(keyboard.next());
 
-            } catch (NumberFormatException e) {
+            }
+            catch (NumberFormatException e) {
 
             }
 
@@ -162,7 +162,7 @@ public class Question_2_Lake_Running {
 
             for(String lakeName: lakes.keySet()) {
 
-                System.out.println(lakeName + ", " + lakes.get(lakeName).getFastest() + " minutes");
+                System.out.println(lakeName + ", " + lakes.get(lakeName).getFastest() + " minutes");//getFastest
 
             }
 
@@ -176,7 +176,7 @@ public class Question_2_Lake_Running {
 
             for(String lakeName: lakes.keySet()) {
 
-                System.out.println(lakeName + ", " + lakes.get(lakeName).getAverage() + " minutes");
+                System.out.println(lakeName + ", " + lakes.get(lakeName).getAverage() + " minutes");//getAverage
 
             }
 
@@ -222,17 +222,17 @@ public class Question_2_Lake_Running {
 
             lakeName = lakeName.toUpperCase();
 
-            Lake lake = null;
+            lake lake = null;
 
             if(lakes.containsKey(lakeName)) {
 
-                lake = lakes.get(lakeName);
+                lake = lake.get(lakeName);
 
             } else {
 
-                lake = new Lake(lakeName);
+                lake = new lake();
 
-                lakes.put(lakeName, lake);
+                lakes.put(lakeName,lake);
 
             }
 
