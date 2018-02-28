@@ -2,7 +2,7 @@ package week_6.q2_lakes;
 import java.util.ArrayList;
 import java.util.ArrayList;
 
-public class lake {
+
 
     public class Lake {
 
@@ -81,5 +81,4 @@ public class lake {
     }
 
 
-}
 

@@ -74,7 +74,7 @@ public class Question_2_Lake_Running {
 
 // create a map of lake name and lake object
 
-        HashMap<String, lake> lakes = new HashMap<>();
+        HashMap<String, Lake> lakes = new HashMap<>();
 
         Scanner keyboard = new Scanner(System.in);
 
@@ -222,15 +222,15 @@ public class Question_2_Lake_Running {
 
             lakeName = lakeName.toUpperCase();
 
-            lake lake = null;
+            Lake lake = null;
 
             if(lakes.containsKey(lakeName)) {
 
-                lake = lake.get(lakeName);
+                lake = lakes.get(lakeName);
 
             } else {
 
-                lake = new lake();
+                lake = new Lake(lakeName);
 
                 lakes.put(lakeName,lake);
 
